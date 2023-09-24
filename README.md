@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# TypeMaster Theme Edition
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TypeMaster Theme Edition is a typing game where users can practice their typing skills with various themes. Users select a theme, enter their username, and then type words related to the chosen theme. The game tracks the user's score and time, and provides feedback on their performance.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Theme Selection**: Users can choose from various themes like "Breast Cancer Awareness Month", "Halloween", "Autumn", and "Oktoberfest".
+- **Score Tracking**: The game keeps track of the user's score based on their typing accuracy.
+- **Timer**: A countdown timer adds an element of challenge to the game.
+- **Consecutive Correct Bonus**: Users receive bonus points for consecutive correct answers.
+- **Local Storage**: The game saves the top 5 scores in the local storage.
+- **End Game Modal**: A modal pops up at the end of the game to display the user's score.
 
-### `npm start`
+## How to Play
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Navigate to the HomePage.
+2. Enter your username.
+3. Select a theme from the available options.
+4. Click "Start Game".
+5. Type the displayed word in the input field.
+6. Press the spacebar to submit the word and move on to the next word.
+7. Try to type as many words as possible before the timer runs out.
+8. At the end of the game, view your score in the modal.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Scoring System
 
-### `npm test`
+In TypeMaster Theme Edition, the scoring system is designed to reward accuracy and speed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Word Accuracy: The closer the match, the higher the score. If the user's input is exactly the same as the current word, they receive points equal to the length of the word.
 
-### `npm run build`
+2. First Try Bonus: If the user types the word correctly on their first try, they receive an additional bonus of 50 points.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Consecutive Correct Bonus: For every two consecutive words typed correctly, the user receives an additional bonus of 100 points.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. End of Game: At the end of the game, the user's total score is displayed, and if it's one of the top 5 scores, it's saved in the local storage.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## For Developers
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React**: The main library used for building the user interface.
+- **React Router**: Used for routing and navigation within the app.
+- **Tailwind CSS**: A utility-first CSS framework used for styling the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Setting Up the Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the Repository**:
 
-## Learn More
+   ```bash
+   git clone [repository-url]
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Navigate to the Project Directory**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd type-master-theme-edition
+   ```
 
-### Code Splitting
+3. **Install Dependencies**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+4. **Start the Development Server**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+   This will start the development server, and the app should open in your default browser. If not, you can manually navigate to `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. **Building for Production**:
 
-### Advanced Configuration
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   This command will create an optimized build of the project in a `build` directory.
 
-### Deployment
+### Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you wish to contribute to this project:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes.
+4. Submit a pull request to the main branch.

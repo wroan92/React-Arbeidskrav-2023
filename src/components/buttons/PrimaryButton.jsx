@@ -3,7 +3,7 @@ import React from "react";
 const PrimaryButton = ({ label, onClick }) => {
   return (
     <button
-      className="bg-blue-500 text-white rounded-full py-2 px-4"
+      className="bg-blue-500 text-white rounded-full py-2 px-4 m-2"
       onClick={onClick}
     >
       {label}
